@@ -1,7 +1,7 @@
 # covid19-nodejs
 ## This covid project made with nodejs with handlebars
 
-Demo [a link](https://covid19-nodejs-demo.herokuapp.com/)
+### [Demo](https://covid19-nodejs-demo.herokuapp.com/)
 
 
 install dependencies `npm i`
