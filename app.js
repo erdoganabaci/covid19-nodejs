@@ -88,11 +88,14 @@ app.get("/", function(req, res) {
 
                     }
                 });
-                var d = new Date(date);
-                date = d.toString();
+
+
                 let serverDateConverted = date.split("T")[0];
-                let serverTimeConverted = new Date(date).toTimeString();
-                console.log(d.toString());
+                let serverTimeConverted = date.split("T")[1];
+                console.log("sv time " + serverTimeConverted);
+                serverTimeConverted = serverTimeConverted.substring(0, serverTimeConverted.length - 1);
+                console.log(serverTimeConverted);
+                date = serverDateConverted + "  " + serverTimeConverted;
                 let coronaTurkey = new CoronaWorld(countryName, countryCode, totalConfirmed, newConfirmed, totalDeaths, newRecovered, totalRecovered, date);
 
                 //console.log(countryName);
