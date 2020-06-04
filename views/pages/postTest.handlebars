@@ -1,0 +1,32 @@
+<h5>Test Asin</h5>
+
+<form action="/test" method="POST">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Asin Number (Ex: B0781Z7Y3S)</label>
+    <input type="text" name="asinnumber" class="form-control" id="asinnumber" placeholder="Enter asin number...">
+
+    <label for="inputState">Select Service For Product</label>
+    <select id="inputState" class="form-control" name="selectProduct">
+      <option selected name="getCompetitivePricingForASIN" id="getCompetitivePricingForASIN"
+        >GetCompetitivePricingForASIN</option>
+      <option name="getMatchingProduct" id="getMatchingProduct">GetMatchingProduct</option>
+      <option name="getLowestPricedOffersForASIN" id="getLowestPricedOffersForASIN">GetLowestPricedOffersForASIN
+      </option>getMyPriceForASIN
+      <option name="getMyPriceForASIN" id="getMyPriceForASIN">GetMyPriceForASIN
+      </option>
+      <option name="getProductCategoriesForASIN" id="getProductCategoriesForASIN">GetProductCategoriesForASIN
+      </option>
+
+    </select>
+  </div>
+
+  <!--
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+  </div>
+
+    -->
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

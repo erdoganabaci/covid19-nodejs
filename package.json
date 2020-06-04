@@ -1,0 +1,24 @@
+{
+    "name": "corona_api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app.js ",
+        "start-dev": "nodemon -e handlebars,html --exec  nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "date-and-time": "^0.13.1",
+        "express": "^4.17.1",
+        "express-handlebars": "^4.0.4",
+        "request": "^2.88.2",
+        "request-promise-native": "^1.0.8"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}
